@@ -1,3 +1,28 @@
+@keyframes logo {
+   0% {
+      opacity: 0;
+      transform:  translatey(-1em);
+   }
+   100% {
+      opacity: 1;
+      transform: translatey(0);
+   }
+}
+@keyframes words {
+   0% {
+      opacity: 0;
+      transform: translateX(1em);
+   }
+    50% {
+      opacity: .5;
+      transform: translateY(.1em);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
 img {
   max-width:100%;
 }
@@ -32,6 +57,7 @@ header h3 {
     color:#ffffff;
     margin:0;
 }
+
 nav {
     grid-area:nav;
     background:#226324;
@@ -193,35 +219,15 @@ input {
     padding:0;
     margin:0;
 }
-@keyframes logo {
-   0% {
-      opacity: 0;
-      transform:  translatey(-1em);
-   }
-   100% {
-      opacity: 1;
-      transform: translatey(0);
-   }
-}
-@keyframes words {
-   0% {
-      opacity: 0;
-      transform: translateX(1em);
-   }
-    50% {
-      opacity: .5;
-      transform: translateY(.1em);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
-}
+
 .headerpic {
     grid-area:headerpic;
     padding:5px;
     height:10vmax;
     animation: logo .5s;
+}
+.headertext {
+  grid-area:headertext;
 }
 
 .headerwrapper {
