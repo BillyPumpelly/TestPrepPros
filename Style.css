@@ -159,10 +159,10 @@ video {
   justify-content:space-around;
 }
 form {
-  background-color:#FFA500;
+  background-color:#FFB300;
   width:90%;
   margin:auto;
-  color:white;
+  color:#000000;
   padding:10px;
 }
 input {
@@ -192,6 +192,67 @@ input {
     font-size:1.5em;
     padding:0;
     margin:0;
+}
+@keyframes logo {
+   0% {
+      opacity: 0;
+      transform:  translatey(-1em);
+   }
+   100% {
+      opacity: 1;
+      transform: translatey(0);
+   }
+}
+@keyframes words {
+   0% {
+      opacity: 0;
+      transform: translateX(1em);
+   }
+    50% {
+      opacity: .5;
+      transform: translateY(.1em);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+.headerpic {
+    grid-area:headerpic;
+    padding:5px;
+    height:10vmax;
+    animation: logo .5s;
+}
+header h1 {
+    font-size:5vw;
+    color:#ffffff;
+    text-shadow: 2px 2px 5px #3217ff;
+    margin: 0;
+    animation: words 1.5s;
+}
+
+header h3 {
+    font-size:3vw;
+    color:#ffffff;
+    margin:0;
+    animation: words 2s;
+}
+figure img {
+    margin-top:16px;
+    max-width:20em;
+    border: 2px solid #0000b0;
+    transition: all .5s ease-in-out;
+}
+
+figure img:hover {
+  transform: scale(1.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+      animation: none !important;
+      transition: none !important;
+      }
 }
 
 /*---------------------------Mobile Layout----------------------------*/
