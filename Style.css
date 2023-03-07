@@ -228,6 +228,9 @@ input {
 }
 .headertext {
   grid-area:headertext;
+  padding:5px;
+  height:10vmax;
+  animation:logo .5s;
 }
 
 .headerwrapper {
