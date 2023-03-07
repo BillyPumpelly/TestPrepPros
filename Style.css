@@ -223,6 +223,16 @@ input {
     height:10vmax;
     animation: logo .5s;
 }
+
+.headerwrapper {
+    display:grid;
+    justify-items: center;
+    align-items:center;
+    grid-template-columns:25% auto;
+    grid-template-areas:
+    "headerpic headertext"
+}
+
 header h1 {
     font-size:5vw;
     color:#ffffff;
